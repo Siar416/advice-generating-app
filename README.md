@@ -7,7 +7,7 @@ Developed using React, Axios to sharpen skills when using useState and useEffect
 
 ## Screen Shot
 
-![App screen shot](src/assets/advice-app_img.JPG)
+![App screen shot](src/assets/advice_img.JPG)
 
 ## Installation
 
