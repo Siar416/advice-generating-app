@@ -172,8 +172,9 @@ body {
   padding: 15px;
   border-radius: 40%;
   position: absolute;
-  bottom: -25px;
-  left: 46%;
+  bottom: -35px;
+  left: 45%;
+  width: 70px;
 }
 
 
