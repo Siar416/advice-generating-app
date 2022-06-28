@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import dividerImg from "../assets/pattern-divider-desktop.svg";
+import dice from "../assets/icon-dice.svg";
 
 function Advice() {
   const [advice, setAdvice] = useState("");
@@ -15,6 +16,15 @@ function Advice() {
     fetchData();
   }, []);
 
+  const handleClick = () => {
+    const fetchData = async () => {
+      const response = await axios.get("https://api.adviceslip.com/advice");
+      console.log(response);
+      setAdvice(response.data.slip);
+    };
+    fetchData();
+  };
+
   if (!advice) {
     return <h1>Loading advice...</h1>;
   }
@@ -26,8 +36,9 @@ function Advice() {
 
       <div className="bottom">
         <div className="divider">
-          <img src={dividerImg} />
+          <img src={dividerImg} alt="divider line" />
         </div>
+        <img onClick={handleClick} className="dice" src={dice} alt="advice" />
       </div>
     </div>
   );
