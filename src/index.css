@@ -155,7 +155,6 @@ body {
 }
 
 .advice_heading {
-  /* margin-top: 45px; */
   font-weight: 400;
   font-size: 1.5rem;
   color:#3fc380
@@ -175,6 +174,7 @@ body {
   bottom: -35px;
   left: 45%;
   width: 70px;
+  cursor: pointer;
 }
 
 
